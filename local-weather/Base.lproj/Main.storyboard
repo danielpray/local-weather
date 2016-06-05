@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="coolvetica.ttf">
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="local_weather" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +31,176 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DBG" translatesAutoresizingMaskIntoConstraints="NO" id="BBT-a3-Zk7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Los Angeles Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="vTZ-Sx-nRq">
+                                <rect key="frame" x="20" y="28" width="560" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="iXC-DY-mF9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="42"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="f1i-FT-lwX">
+                                <rect key="frame" x="10" y="179" width="560" height="413"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="h6O-0x-qdV">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="210"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" image="01d" translatesAutoresizingMaskIntoConstraints="NO" id="mja-ry-7JL">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="210"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="765" text="84ºF" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="60" translatesAutoresizingMaskIntoConstraints="NO" id="HQE-w9-Wnq">
+                                                <rect key="frame" x="280" y="0.0" width="280" height="210"/>
+                                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="120"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="nLh-He-5FQ"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="nLh-He-5FQ"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="X90-U9-Ke9">
+                                        <rect key="frame" x="0.0" y="215" width="560" height="154"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="n3b-Kd-JhD">
+                                                <rect key="frame" x="0.0" y="0.0" width="255" height="154"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="251" text="Sunrise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="696-lr-TRX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="255" height="77"/>
+                                                        <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="44"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="252" text="5:00 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="RwA-g6-bzr">
+                                                        <rect key="frame" x="0.0" y="77" width="255" height="77"/>
+                                                        <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="34"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jNL-8I-T4r">
+                                                <rect key="frame" x="305" y="0.0" width="255" height="154"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="252" text="Sunset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="1mT-fr-iYE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="255" height="77"/>
+                                                        <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="44"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="7:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="BRy-Zt-UcH">
+                                                        <rect key="frame" x="0.0" y="77" width="255" height="77"/>
+                                                        <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="34"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xei-zY-B7e">
+                                        <rect key="frame" x="0.0" y="374" width="560" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="nID-02-k2Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="40"/>
+                                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="7:45 AM PDT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="txA-qa-S9K">
+                                                <rect key="frame" x="194" y="0.0" width="173" height="40"/>
+                                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="06/05/2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="CLR-Yj-edv">
+                                                <rect key="frame" x="387" y="0.0" width="174" height="40"/>
+                                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3F-P5-5iK">
+                                <rect key="frame" x="536" y="28" width="44" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="dgi-Jd-7hZ"/>
+                                    <constraint firstAttribute="height" constant="29" id="r6h-q6-Xfa"/>
+                                </constraints>
+                                <state key="normal" image="music"/>
+                                <connections>
+                                    <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQk-QK-BcB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hf-ey-Mdc">
+                                <rect key="frame" x="20" y="121" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ade-iC-1Dv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="41"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vTZ-Sx-nRq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4tP-kt-z1W"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BBT-a3-Zk7" secondAttribute="bottom" id="Di5-Ce-x7Y"/>
+                            <constraint firstItem="vTZ-Sx-nRq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="HdG-ec-pnw"/>
+                            <constraint firstItem="4Hf-ey-Mdc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KkY-3t-jhB"/>
+                            <constraint firstItem="4Hf-ey-Mdc" firstAttribute="top" secondItem="vTZ-Sx-nRq" secondAttribute="bottom" constant="8" id="Nva-HX-N5V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f1i-FT-lwX" secondAttribute="trailing" id="U7y-bV-KwA"/>
+                            <constraint firstAttribute="trailing" secondItem="BBT-a3-Zk7" secondAttribute="trailing" id="Vrj-0P-bLn"/>
+                            <constraint firstItem="4Hf-ey-Mdc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WgZ-CF-cgV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="f1i-FT-lwX" secondAttribute="bottom" constant="8" id="f5x-2O-SqF"/>
+                            <constraint firstItem="f1i-FT-lwX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gMq-4d-74h"/>
+                            <constraint firstItem="BBT-a3-Zk7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hHa-WR-KpB"/>
+                            <constraint firstItem="F3F-P5-5iK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="hIo-Uc-EO9"/>
+                            <constraint firstItem="vTZ-Sx-nRq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="o3Z-T3-TfU"/>
+                            <constraint firstItem="BBT-a3-Zk7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="o7l-3a-c6w"/>
+                            <constraint firstItem="f1i-FT-lwX" firstAttribute="top" secondItem="4Hf-ey-Mdc" secondAttribute="bottom" constant="8" id="qPo-Dh-XHN"/>
+                            <constraint firstItem="F3F-P5-5iK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="uE3-5j-4Zj"/>
+                            <constraint firstItem="vTZ-Sx-nRq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="x17-hC-zEV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4tP-kt-z1W"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="cityLbl" destination="vTZ-Sx-nRq" id="YXz-yv-wYR"/>
+                        <outlet property="dateLbl" destination="CLR-Yj-edv" id="tQn-Vr-iGU"/>
+                        <outlet property="dayLbl" destination="nID-02-k2Q" id="deq-8g-o5a"/>
+                        <outlet property="descriptionLbl" destination="4Hf-ey-Mdc" id="QqU-XU-Aqz"/>
+                        <outlet property="sunriseLbl" destination="RwA-g6-bzr" id="DWB-EB-gI7"/>
+                        <outlet property="sunsetLbl" destination="BRy-Zt-UcH" id="a2L-Az-q2Y"/>
+                        <outlet property="temperatureLbl" destination="HQE-w9-Wnq" id="ril-gO-XmA"/>
+                        <outlet property="timeLbl" destination="txA-qa-S9K" id="Wd1-LH-UeH"/>
+                        <outlet property="timedBackgroundImg" destination="BBT-a3-Zk7" id="U4u-xo-Wtl"/>
+                        <outlet property="weatherIconImg" destination="mja-ry-7JL" id="JGM-ic-rWE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="237"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01d" width="700" height="580"/>
+        <image name="DBG" width="1667" height="1667"/>
+        <image name="music" width="100" height="100"/>
+    </resources>
 </document>
