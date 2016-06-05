@@ -36,7 +36,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Los Angeles Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="vTZ-Sx-nRq">
-                                <rect key="frame" x="20" y="28" width="560" height="85"/>
+                                <rect key="frame" x="20" y="48" width="560" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="iXC-DY-mF9"/>
                                 </constraints>
@@ -45,16 +45,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="f1i-FT-lwX">
-                                <rect key="frame" x="10" y="179" width="560" height="413"/>
+                                <rect key="frame" x="10" y="179" width="560" height="400"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="h6O-0x-qdV">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="210"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="203"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" image="01d" translatesAutoresizingMaskIntoConstraints="NO" id="mja-ry-7JL">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="210"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="203"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="765" text="84ºF" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="60" translatesAutoresizingMaskIntoConstraints="NO" id="HQE-w9-Wnq">
-                                                <rect key="frame" x="280" y="0.0" width="280" height="210"/>
+                                                <rect key="frame" x="280" y="0.0" width="280" height="203"/>
                                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="120"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -70,19 +70,19 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="X90-U9-Ke9">
-                                        <rect key="frame" x="0.0" y="215" width="560" height="154"/>
+                                        <rect key="frame" x="0.0" y="208" width="560" height="149"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="n3b-Kd-JhD">
-                                                <rect key="frame" x="0.0" y="0.0" width="255" height="154"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="255" height="149"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="251" text="Sunrise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="696-lr-TRX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="255" height="77"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="255" height="75"/>
                                                         <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="44"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="252" text="5:00 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="RwA-g6-bzr">
-                                                        <rect key="frame" x="0.0" y="77" width="255" height="77"/>
+                                                        <rect key="frame" x="0.0" y="75" width="255" height="75"/>
                                                         <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="34"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -90,16 +90,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jNL-8I-T4r">
-                                                <rect key="frame" x="305" y="0.0" width="255" height="154"/>
+                                                <rect key="frame" x="305" y="0.0" width="255" height="149"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="252" text="Sunset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="1mT-fr-iYE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="255" height="77"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="255" height="75"/>
                                                         <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="44"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="7:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="BRy-Zt-UcH">
-                                                        <rect key="frame" x="0.0" y="77" width="255" height="77"/>
+                                                        <rect key="frame" x="0.0" y="75" width="255" height="75"/>
                                                         <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="34"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -109,22 +109,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xei-zY-B7e">
-                                        <rect key="frame" x="0.0" y="374" width="560" height="40"/>
+                                        <rect key="frame" x="0.0" y="362" width="560" height="38"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="nID-02-k2Q">
-                                                <rect key="frame" x="0.0" y="0.0" width="174" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="38"/>
                                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="7:45 AM PDT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="txA-qa-S9K">
-                                                <rect key="frame" x="194" y="0.0" width="173" height="40"/>
+                                                <rect key="frame" x="194" y="0.0" width="173" height="38"/>
                                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="06/05/2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="CLR-Yj-edv">
-                                                <rect key="frame" x="387" y="0.0" width="174" height="40"/>
+                                                <rect key="frame" x="387" y="0.0" width="174" height="38"/>
                                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -145,7 +145,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hf-ey-Mdc">
-                                <rect key="frame" x="20" y="121" width="560" height="50"/>
+                                <rect key="frame" x="20" y="134" width="560" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ade-iC-1Dv"/>
                                 </constraints>
@@ -158,9 +158,9 @@
                         <constraints>
                             <constraint firstItem="vTZ-Sx-nRq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4tP-kt-z1W"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BBT-a3-Zk7" secondAttribute="bottom" id="Di5-Ce-x7Y"/>
-                            <constraint firstItem="vTZ-Sx-nRq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="HdG-ec-pnw"/>
+                            <constraint firstItem="vTZ-Sx-nRq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="HdG-ec-pnw"/>
                             <constraint firstItem="4Hf-ey-Mdc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KkY-3t-jhB"/>
-                            <constraint firstItem="4Hf-ey-Mdc" firstAttribute="top" secondItem="vTZ-Sx-nRq" secondAttribute="bottom" constant="8" id="Nva-HX-N5V"/>
+                            <constraint firstItem="4Hf-ey-Mdc" firstAttribute="top" secondItem="vTZ-Sx-nRq" secondAttribute="bottom" constant="1" id="Nva-HX-N5V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="f1i-FT-lwX" secondAttribute="trailing" id="U7y-bV-KwA"/>
                             <constraint firstAttribute="trailing" secondItem="BBT-a3-Zk7" secondAttribute="trailing" id="Vrj-0P-bLn"/>
                             <constraint firstItem="4Hf-ey-Mdc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WgZ-CF-cgV"/>
