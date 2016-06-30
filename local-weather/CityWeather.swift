@@ -11,14 +11,15 @@ import Alamofire
 
 class CityWeather {
     private var _cityName: String!
-    private var _currentTime: NSDate!
-    private var _weather_desc: String!
-    private var _temperature: Float!
-    private var _weatherID: Int!
-    private var _weatherIcon: String!
-    private var _sunrise: NSDate!
-    private var _sunset: NSDate!
-    private var _country: String!
+    private var _currentTime: NSDate?
+    private var _weather_desc: String?
+    private var _temperature: Float?
+    private var _weatherID: Int?
+    private var _weatherIcon: String?
+    private var _sunrise: NSDate?
+    private var _sunset: NSDate?
+    private var _country: String?
+    private var _zipCode: String!
     
     var cityName: String {
         get {
@@ -30,7 +31,14 @@ class CityWeather {
     }
     
     var currentTime: NSDate {
-        return _currentTime
+        get {
+            if _currentTime != nil {
+                return _currentTime!
+            } else {
+                return NSDate()
+            }
+        }
+        
     }
     
     var weather_desc: String {
@@ -38,7 +46,7 @@ class CityWeather {
             if _weather_desc == nil {
                 return ""
             }
-            return _weather_desc
+            return _weather_desc!
         }
     }
     
@@ -47,7 +55,7 @@ class CityWeather {
             if _temperature == nil {
                 return -1.0
             }
-            return _temperature
+            return _temperature!
         }
     }
     
@@ -56,7 +64,7 @@ class CityWeather {
             if _weatherID == nil {
                 return -1
             }
-            return _weatherID
+            return _weatherID!
         }
     }
     
@@ -65,16 +73,29 @@ class CityWeather {
             if _weatherIcon == nil {
                 return ""
             }
-            return _weatherIcon
+            return _weatherIcon!
         }
     }
     
     var sunrise: NSDate {
-        return _sunrise
+        get {
+            if _sunrise == nil {
+                return NSDate()
+            } else {
+                return _sunrise!
+            }
+        }
+        
     }
     
     var sunset: NSDate {
-        return _sunset
+        get {
+            if _sunset == nil {
+                return NSDate()
+            } else {
+                return _sunset!
+            }
+        }
     }
     
     var country: String {
@@ -82,23 +103,35 @@ class CityWeather {
             if _country == nil {
                 return ""
             }
-            return _country
+            return _country!
         }
+    }
+    
+    var zipCode: String {
+        return _zipCode
+    }
+    
+    init(city: City) {
+        _zipCode = city.zipCode
+        _cityName = city.name
+        
     }
     
     func loadCityWeather(completed: DownloadComplete) {
         
-        let url = "\(BASE_URL)\(QUERY)\(KEY)"
+        
+        let query = "?zip=\(_zipCode),us"
+        let url = "\(BASE_URL)\(query)\(KEY)"
         let nsurl = NSURL(string: url)!
         
         Alamofire.request(.GET, nsurl).responseJSON { response in
             let result = response.result
             print(result.debugDescription)
             if let dict = result.value as? Dictionary<String,AnyObject> {
-                if let city = dict["name"] as? String {
-                    print(city)
-                    self._cityName = city
-                }
+                //if let city = dict["name"] as? String {
+                //    print(city)
+                //    self._cityName = city
+                //}
                 if let main_dict = dict["main"] as? Dictionary<String,AnyObject> {
                     // print(main_dict.debugDescription)
                     if let temperature = main_dict["temp"] as? Float {

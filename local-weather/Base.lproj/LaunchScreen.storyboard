@@ -16,47 +16,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Graphics by Anusha Narvekar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flq-YK-sXY">
-                                <rect key="frame" x="158" y="299" width="227" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="227" id="B1E-cM-qdN"/>
-                                    <constraint firstAttribute="height" constant="21" id="b60-xL-eeq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Built by Daniel Ray" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNx-So-6p0">
-                                <rect key="frame" x="200" y="246" width="142" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="AWz-RF-4k9"/>
-                                    <constraint firstAttribute="width" constant="142" id="ElX-SG-aiN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Noun Project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eW-n9-0Gk">
-                                <rect key="frame" x="204" y="328" width="134" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="tzq-wX-TZs"/>
-                                    <constraint firstAttribute="height" constant="21" id="vVe-Y3-MhU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="1eW-n9-0Gk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CDf-Zp-Ptk"/>
-                            <constraint firstItem="Flq-YK-sXY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jnm-At-3DE"/>
-                            <constraint firstItem="1eW-n9-0Gk" firstAttribute="top" secondItem="Flq-YK-sXY" secondAttribute="bottom" constant="8" id="kTz-yo-FXt"/>
-                            <constraint firstItem="PNx-So-6p0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sfk-Js-Fg8"/>
-                            <constraint firstItem="Flq-YK-sXY" firstAttribute="top" secondItem="PNx-So-6p0" secondAttribute="bottom" constant="32" id="u7c-nY-Cho"/>
-                            <constraint firstItem="PNx-So-6p0" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="226" id="v23-wg-leX"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

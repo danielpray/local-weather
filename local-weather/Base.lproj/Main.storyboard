@@ -17,6 +17,7 @@
             <string>CoolveticaRg-Regular</string>
             <string>CoolveticaRg-Regular</string>
             <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -108,22 +109,22 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xei-zY-B7e">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xei-zY-B7e">
                                         <rect key="frame" x="0.0" y="362" width="560" height="38"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="nID-02-k2Q">
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="nID-02-k2Q">
                                                 <rect key="frame" x="0.0" y="0.0" width="174" height="38"/>
                                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="7:45 AM PDT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="txA-qa-S9K">
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" text="7:45 AM PDT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="txA-qa-S9K">
                                                 <rect key="frame" x="194" y="0.0" width="173" height="38"/>
                                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="06/05/2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="CLR-Yj-edv">
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" text="06/05/2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="CLR-Yj-edv">
                                                 <rect key="frame" x="387" y="0.0" width="174" height="38"/>
                                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,19 +134,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3F-P5-5iK">
-                                <rect key="frame" x="536" y="28" width="44" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="dgi-Jd-7hZ"/>
-                                    <constraint firstAttribute="height" constant="29" id="r6h-q6-Xfa"/>
-                                </constraints>
-                                <state key="normal" image="music"/>
-                                <connections>
-                                    <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQk-QK-BcB"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hf-ey-Mdc">
-                                <rect key="frame" x="20" y="134" width="560" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hf-ey-Mdc">
+                                <rect key="frame" x="20" y="116" width="560" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ade-iC-1Dv"/>
                                 </constraints>
@@ -153,26 +143,97 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for City" translatesAutoresizingMaskIntoConstraints="NO" id="A10-FB-cYz">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="qDG-vT-wGY"/>
+                                </constraints>
+                                <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQZ-3I-j2V" customClass="MaterialView" customModule="local_weather" customModuleProvider="target">
+                                <rect key="frame" x="20" y="72" width="560" height="461"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dYM-PI-5Id">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="461"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" rowHeight="80" id="0wi-Nh-fOj" customClass="CityCell" customModule="local_weather" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="560" height="80"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0wi-Nh-fOj" id="Ybb-Z8-cdi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="560" height="80"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y0f-xy-wrQ" customClass="MaterialView" customModule="local_weather" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="8" width="560" height="56.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Northridge, CA 91324" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="aOL-UP-j17">
+                                                                    <rect key="frame" x="30" y="8" width="500" height="41.5"/>
+                                                                    <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="32"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="aOL-UP-j17" secondAttribute="trailing" constant="30" id="2Id-EX-vuw"/>
+                                                                <constraint firstItem="aOL-UP-j17" firstAttribute="top" secondItem="y0f-xy-wrQ" secondAttribute="top" constant="8" id="Y16-Wj-Osv"/>
+                                                                <constraint firstItem="aOL-UP-j17" firstAttribute="leading" secondItem="y0f-xy-wrQ" secondAttribute="leading" constant="30" id="ZoK-co-CJ7"/>
+                                                                <constraint firstAttribute="bottom" secondItem="aOL-UP-j17" secondAttribute="bottom" constant="8" id="jde-Aq-f0R"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="y0f-xy-wrQ" secondAttribute="bottom" constant="8" id="3S3-UU-8EJ"/>
+                                                        <constraint firstItem="y0f-xy-wrQ" firstAttribute="top" secondItem="Ybb-Z8-cdi" secondAttribute="top" constant="8" id="6If-22-8oo"/>
+                                                        <constraint firstItem="y0f-xy-wrQ" firstAttribute="leading" secondItem="Ybb-Z8-cdi" secondAttribute="leading" id="gd3-kz-3j4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="y0f-xy-wrQ" secondAttribute="trailing" id="qnD-ey-Hs7"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="citySearchStringLbl" destination="aOL-UP-j17" id="bwX-Hk-7XM"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dYM-PI-5Id" firstAttribute="top" secondItem="HQZ-3I-j2V" secondAttribute="top" id="6la-gG-STi"/>
+                                    <constraint firstAttribute="trailing" secondItem="dYM-PI-5Id" secondAttribute="trailing" id="AMs-Q0-Qcj"/>
+                                    <constraint firstItem="dYM-PI-5Id" firstAttribute="leading" secondItem="HQZ-3I-j2V" secondAttribute="leading" id="EdW-JI-bKD"/>
+                                    <constraint firstAttribute="bottom" secondItem="dYM-PI-5Id" secondAttribute="bottom" id="Fg6-4p-kFc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vTZ-Sx-nRq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4tP-kt-z1W"/>
+                            <constraint firstItem="A10-FB-cYz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9tL-zb-eYB"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BBT-a3-Zk7" secondAttribute="bottom" id="Di5-Ce-x7Y"/>
                             <constraint firstItem="vTZ-Sx-nRq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="HdG-ec-pnw"/>
                             <constraint firstItem="4Hf-ey-Mdc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KkY-3t-jhB"/>
                             <constraint firstItem="4Hf-ey-Mdc" firstAttribute="top" secondItem="vTZ-Sx-nRq" secondAttribute="bottom" constant="1" id="Nva-HX-N5V"/>
+                            <constraint firstItem="HQZ-3I-j2V" firstAttribute="top" secondItem="A10-FB-cYz" secondAttribute="bottom" constant="8" id="OES-Vu-Jkd"/>
+                            <constraint firstItem="HQZ-3I-j2V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RGX-er-DcA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="f1i-FT-lwX" secondAttribute="trailing" id="U7y-bV-KwA"/>
                             <constraint firstAttribute="trailing" secondItem="BBT-a3-Zk7" secondAttribute="trailing" id="Vrj-0P-bLn"/>
                             <constraint firstItem="4Hf-ey-Mdc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WgZ-CF-cgV"/>
+                            <constraint firstItem="HQZ-3I-j2V" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="afs-vH-VvL"/>
                             <constraint firstAttribute="bottomMargin" secondItem="f1i-FT-lwX" secondAttribute="bottom" constant="8" id="f5x-2O-SqF"/>
                             <constraint firstItem="f1i-FT-lwX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gMq-4d-74h"/>
                             <constraint firstItem="BBT-a3-Zk7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hHa-WR-KpB"/>
-                            <constraint firstItem="F3F-P5-5iK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="hIo-Uc-EO9"/>
                             <constraint firstItem="vTZ-Sx-nRq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="o3Z-T3-TfU"/>
                             <constraint firstItem="BBT-a3-Zk7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="o7l-3a-c6w"/>
                             <constraint firstItem="f1i-FT-lwX" firstAttribute="top" secondItem="4Hf-ey-Mdc" secondAttribute="bottom" constant="8" id="qPo-Dh-XHN"/>
-                            <constraint firstItem="F3F-P5-5iK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="uE3-5j-4Zj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HQZ-3I-j2V" secondAttribute="bottom" constant="67" id="t9d-Sb-jmK"/>
+                            <constraint firstAttribute="trailing" secondItem="A10-FB-cYz" secondAttribute="trailing" id="wye-QJ-Yg2"/>
                             <constraint firstItem="vTZ-Sx-nRq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="x17-hC-zEV"/>
+                            <constraint firstItem="A10-FB-cYz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zJN-Nz-90U"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -182,11 +243,14 @@
                     </view>
                     <connections>
                         <outlet property="cityLbl" destination="vTZ-Sx-nRq" id="YXz-yv-wYR"/>
+                        <outlet property="containerViewForTable" destination="HQZ-3I-j2V" id="y4l-Ra-rjr"/>
                         <outlet property="dateLbl" destination="CLR-Yj-edv" id="tQn-Vr-iGU"/>
                         <outlet property="dayLbl" destination="nID-02-k2Q" id="deq-8g-o5a"/>
                         <outlet property="descriptionLbl" destination="4Hf-ey-Mdc" id="QqU-XU-Aqz"/>
+                        <outlet property="searchBar" destination="A10-FB-cYz" id="dJe-Sc-DCw"/>
                         <outlet property="sunriseLbl" destination="RwA-g6-bzr" id="DWB-EB-gI7"/>
                         <outlet property="sunsetLbl" destination="BRy-Zt-UcH" id="a2L-Az-q2Y"/>
+                        <outlet property="tableView" destination="dYM-PI-5Id" id="mvG-uH-7Y5"/>
                         <outlet property="temperatureLbl" destination="HQE-w9-Wnq" id="ril-gO-XmA"/>
                         <outlet property="timeLbl" destination="txA-qa-S9K" id="Wd1-LH-UeH"/>
                         <outlet property="timedBackgroundImg" destination="BBT-a3-Zk7" id="U4u-xo-Wtl"/>
@@ -201,6 +265,5 @@
     <resources>
         <image name="01d" width="700" height="580"/>
         <image name="DBG" width="1667" height="1667"/>
-        <image name="music" width="100" height="100"/>
     </resources>
 </document>
